@@ -102,7 +102,7 @@ if __name__ == "__main__":
     email_file = 'sample-10.eml'  # Podaj ścieżkę do pliku EML
     result, features = classify_email(email_file)
     print(f"Wynik klasyfikacji dla {email_file}: {'Phishing' if result == 1 else 'Nie phishing'}")
-    print("Ekstrahowane cechy:")
+    #print("Ekstrahowane cechy:")
     # print("Nadawca:", features['sender'])
     # print("Odbiorca:", features['receiver'])
     # print("Data:", features['date'])
