@@ -1,0 +1,72 @@
+.howItWorks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ustaw wysokość na 100vh */
+    background-color: #f9f9f9; /* Jasne tło */
+    padding: 40px;
+    text-align: center; /* Wyśrodkowanie tekstu */
+    color: #333; /* Kolor tekstu */
+    font-family: 'Arial', sans-serif; /* Użycie nowoczesnej czcionki */
+    border-radius: 10px; /* Zaokrąglenie rogów */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Cień dla głębi */
+  }
+  
+  .howItWorks h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff; /* Kolor nagłówka */
+  }
+  
+  .howItWorks p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Wysokość linii dla lepszej czytelności */
+  }
+  
+  .steps {
+    list-style-type: none; /* Usunięcie punktów z listy */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .steps li {
+    font-size: 1.1rem;
+    margin: 15px 0; /* Odstęp między elementami listy */
+    position: relative; /* Umożliwia pozycjonowanie pseudo-elementów */
+    padding-left: 30px; /* Odstęp dla tekstu */
+  }
+  
+  .steps li::before {
+    content: '✔️'; /* Ikona przed każdym krokiem */
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem; /* Rozmiar ikony */
+  }
+  
+  .howItWorks h3 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .howItWorks ul {
+    list-style-type: none; /* Usunięcie punktów z listy */
+    padding: 0;
+  }
+  
+  .howItWorks li {
+    font-size: 1.1rem;
+    margin: 10px 0; /* Odstęp między elementami listy */
+  }
+  
+  .code-block {
+    background-color: #1e1e1e; /* Ciemne tło */
+    color: #00ff00; /* Zielony tekst */
+    padding: 10px; /* Padding wewnętrzny */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    overflow-x: auto; /* Przewijanie w poziomie */
+    font-family: 'Courier New', Courier, monospace; /* Czcionka monospace */
+    margin: 10px 0; /* Odstęp między blokami kodu */
+  }
