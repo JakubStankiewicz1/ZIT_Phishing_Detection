@@ -5,6 +5,7 @@ import HowItWorks from './components/HowItWorks/HowItWorks';
 import './index.css';
 import Usage from './components/Usage/Usage';
 import LetsTalk from './components/LetsTalk/LetsTalk';
+import Technologies from './components/Technologies/Technologies';
 
 function App() {
   return (
@@ -16,12 +17,16 @@ function App() {
       <div className="pageElement" id="howItWorks">
         <HowItWorks />
       </div>
+      <div className="pageElement">
+        <Technologies />
+      </div>
       <div className="pageElement" id="usage">
         <Usage />
       </div>
       <div className="pageElement" id="letsTalk">
         <LetsTalk />
       </div>
+      
     </div>
   );
 }

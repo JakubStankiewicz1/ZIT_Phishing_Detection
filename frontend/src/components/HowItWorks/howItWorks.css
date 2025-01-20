@@ -5,29 +5,39 @@
   justify-content: center;
   height: 100vh;
   background-color: #f3f1ef;
-  padding: 40px;
+  padding: 20px;
   text-align: center;
   color: #333;
   font-family: "Arial", sans-serif;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Dodaj przewijanie, jeśli treść jest zbyt długa */
 }
 
 .howItWorks h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #007bff;
 }
 
 .howItWorks p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 20px;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .steps {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 90vw;
+  font-size: 0.9rem; /* Zwiększ rozmiar czcionki */
+}
+
+.stepsTitle {
+  font-weight: bold;
+  color: #333;
 }
 
 .steps li {
@@ -35,19 +45,22 @@
   margin: 15px 0;
   position: relative;
   padding-left: 30px;
+  text-align: left; /* Wyrównanie tekstu do lewej */
 }
 
 .steps li::before {
-  content: "✔️";
+  /* content: "✔️"; Dodajemy ikonę przed każdym krokiem */
   position: absolute;
   left: 0;
   font-size: 1.5rem;
+  color: #007bff; /* Kolor ikony */
 }
 
 .howItWorks h3 {
   font-size: 2rem;
   margin-top: 30px;
   margin-bottom: 10px;
+  color: #007bff;
 }
 
 .howItWorks ul {
@@ -62,10 +75,26 @@
 
 .code-block {
   background-color: #1e1e1e;
-  color: #00ff00;
+  color: #5ad4e4;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 2px;
   overflow-x: auto;
   font-family: "Courier New", Courier, monospace;
-  margin: 10px 0;
+  /* margin: 10px 0; */
+  max-width: 45vw;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.codeBlockElement {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
+.codeBlockElement p {
+  margin-bottom: 0;
 }
