@@ -8,7 +8,7 @@ import bad from "../../assets/delete.png";
 const Detect = () => {
   const [emailText, setEmailText] = useState("");
   const [result, setResult] = useState("");
-  const [isPhishing, setIsPhishing] = useState(null); // Nowy stan do przechowywania informacji o phishingu
+  const [isPhishing, setIsPhishing] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,7 +17,7 @@ const Detect = () => {
         email_text: emailText,
       });
       setResult(response.data.result);
-      setIsPhishing(response.data.result === 'Phishing'); // Ustawienie stanu na podstawie wyniku
+      setIsPhishing(response.data.result === "Phishing");
     } catch (error) {
       console.error("Error during prediction:", error);
     }
@@ -27,12 +27,17 @@ const Detect = () => {
     <div className="detect">
       <div className="detectTop">
         <h1 className="detectTopPartTitle">PhishGuard</h1>
-        <p className="detectTopHeader">Wprowadź wiadomość e-mail poniżej, a my sprawdzimy, czy jest to próba phishingu. Twoje bezpieczeństwo jest dla nas ważne!</p>
+        <p className="detectTopHeader">
+          Wprowadź wiadomość e-mail poniżej, a my sprawdzimy, czy jest to próba
+          phishingu. Twoje bezpieczeństwo jest dla nas ważne!
+        </p>
         <img src={scan} alt="" className="detectImgScan" />
       </div>
 
       <p className="detectTextElement">
-        By submitting data above, you are agreeing to our Terms of Service and Privacy Notice. Please do not submit any personal information; we are not responsible for the contents of your submission. Learn more.
+        By submitting data above, you are agreeing to our Terms of Service and
+        Privacy Notice. Please do not submit any personal information; we are
+        not responsible for the contents of your submission. Learn more.
       </p>
 
       <form onSubmit={handleSubmit}>
@@ -48,15 +53,15 @@ const Detect = () => {
       </form>
 
       {result && (
-        <div className={`resultMessage ${isPhishing ? 'phishing' : 'safe'}`}>
+        <div className={`resultMessage ${isPhishing ? "phishing" : "safe"}`}>
           {isPhishing ? (
             <>
-                <img src={bad} alt="" className="detectResultIcon" />
+              <img src={bad} alt="" className="detectResultIcon" />
               <span>This message seems to be phising</span>
             </>
           ) : (
             <>
-                <img src={ok} alt="" className="detectResultIcon" />
+              <img src={ok} alt="" className="detectResultIcon" />
               <span>Message got flagged as safe</span>
             </>
           )}

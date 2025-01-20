@@ -10,19 +10,17 @@ import os
 
 # Tworzenie aplikacji Flask
 app = Flask(__name__)
-CORS(app)  # Umożliwia CORS dla frontendowego Reacta
+CORS(app)
 
 # Sprawdzenie, czy model i wektoryzator istnieją
 model_file = 'phishing_model.pkl'
 vectorizer_file = 'vectorizer.pkl'
 
 if os.path.exists(model_file) and os.path.exists(vectorizer_file):
-    # Wczytaj model i wektoryzator
     model = joblib.load(model_file)
     vectorizer = joblib.load(vectorizer_file)
 else:
-    # Wczytaj dane
-    data = pd.read_csv('emails.csv').head(10000)  # Upewnij się, że plik emails.csv jest w tym samym folderze
+    data = pd.read_csv('emails.csv').head(10000)
 
     # Sprawdzenie brakujących danych
     data = data.dropna(subset=['Email Text', 'Email Type'])

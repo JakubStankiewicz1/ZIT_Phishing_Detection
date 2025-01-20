@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 * {
   margin: 0;
@@ -10,23 +10,24 @@ a {
   text-decoration: none;
 }
 
-html, body {
-  height: 100%; /* Ustaw wysokość na 100% */
-  overflow: hidden; /* Ukryj domyślny pasek przewijania */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
   font-family: "Outfit", sans-serif;
-  background: #DCDCDC;
+  background: #dcdcdc;
 }
 
 .pageElement {
-  height: 100vh; /* Ustaw wysokość na 100vh */
-  scroll-snap-align: start; /* Ustawienie punktu snapowania */
+  height: 100vh;
+  scroll-snap-align: start;
 }
 
 .container {
-  scroll-snap-type: y mandatory; /* Włączenie snapowania w osi Y */
-  height: 100vh; /* Ustaw wysokość na 100vh */
-  overflow-y: auto; /* Umożliwienie przewijania w osi Y */
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: auto;
 }
