@@ -7,7 +7,7 @@ const HowItWorks = () => {
       <h2>Jak to działa? 🤔</h2>
       <p>
         Nasza aplikacja do wykrywania phishingu to jak superbohater w Twojej
-        skrzynce odbiorczej! 🦸‍♂️ Wykorzystuje zaawansowane algorytmy uczenia
+        skrzynce odbiorczej! 🦸‍♂️<br />Wykorzystuje zaawansowane algorytmy uczenia
         maszynowego, aby analizować treść wiadomości e-mail i identyfikować
         potencjalne próby oszustwa. Oto jak to działa:
       </p>
