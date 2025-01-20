@@ -47,7 +47,7 @@ const LetsTalk = () => {
   };
 
   return (
-    <div className="letsTalk">
+    <div className="letsTalk" id="letsTalk">
       <h2>Skontaktuj się z nami! 📞</h2>
       <form onSubmit={onSubmit} className="contact-form">
         <input type="text" name="name" placeholder="Imię" required />

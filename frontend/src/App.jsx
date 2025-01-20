@@ -9,17 +9,17 @@ import LetsTalk from './components/LetsTalk/LetsTalk';
 function App() {
   return (
     <div className="container">
-      <div className="pageElement">
+      <div className="pageElement" id="detect">
         <Navbar />
         <Detect />
       </div>
-      <div className="pageElement">
+      <div className="pageElement" id="howItWorks">
         <HowItWorks />
       </div>
-      <div className="pageElement">
+      <div className="pageElement" id="usage">
         <Usage />
       </div>
-      <div className="pageElement">
+      <div className="pageElement" id="letsTalk">
         <LetsTalk />
       </div>
     </div>

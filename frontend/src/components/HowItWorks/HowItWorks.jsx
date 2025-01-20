@@ -3,7 +3,7 @@ import "./howItWorks.css";
 
 const HowItWorks = () => {
   return (
-    <div className=" howItWorks">
+    <div className="howItWorks" id="howItWorks">
       <h2>Jak to działa? 🤔</h2>
       <p>
         Nasza aplikacja do wykrywania phishingu to jak superbohater w Twojej

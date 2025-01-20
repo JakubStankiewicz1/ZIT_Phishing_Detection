@@ -4,6 +4,7 @@ import scan from "../../assets/scan.webp";
 import axios from "axios";
 import ok from "../../assets/check.png";
 import bad from "../../assets/delete.png";
+import logo from "../../assets/logoIcon.png";
 
 const Detect = () => {
   const [emailText, setEmailText] = useState("");
@@ -24,9 +25,12 @@ const Detect = () => {
   };
 
   return (
-    <div className="detect">
+    <div className="detect" id="detect">
       <div className="detectTop">
-        <h1 className="detectTopPartTitle">PhishGuard</h1>
+        <h1 className="detectTopPartTitle">
+          <img src={logo} alt="" className="detectTopImg" />
+          PhishGuard
+        </h1>
         <p className="detectTopHeader">
           Wprowadź wiadomość e-mail poniżej, a my sprawdzimy, czy jest to próba
           phishingu. Twoje bezpieczeństwo jest dla nas ważne!
@@ -37,7 +41,7 @@ const Detect = () => {
       <p className="detectTextElement">
         By submitting data above, you are agreeing to our Terms of Service and
         Privacy Notice. Please do not submit any personal information; we are
-        not responsible for the contents of your submission. Learn more.
+        not responsible for the contents of your submission.{" "}
       </p>
 
       <form onSubmit={handleSubmit}>
@@ -49,7 +53,15 @@ const Detect = () => {
           placeholder="Wprowadź treść wiadomości e-mail..."
         />
         <br />
-        <button type="submit">Sprawdź</button>
+
+        <button type="submit" class="btn-76">
+          Sprawdź
+          <span class="top"></span>
+          <span class="right"></span>
+          <span class="bottom"></span>
+          <span class="left"></span>
+        </button>
+
       </form>
 
       {result && (
@@ -57,7 +69,7 @@ const Detect = () => {
           {isPhishing ? (
             <>
               <img src={bad} alt="" className="detectResultIcon" />
-              <span>This message seems to be phising</span>
+              <span>This message seems to be phishing</span>
             </>
           ) : (
             <>

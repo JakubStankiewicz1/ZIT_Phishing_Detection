@@ -3,7 +3,7 @@ import "./usage.css";
 
 const Usage = () => {
   return (
-    <div className="usage">
+    <div className="usage" id="usage">
       <h2>Jak korzystać z PhishGuard? 🚀</h2>
       <p>
         PhishGuard to prosta w użyciu aplikacja, która pozwala na szybkie sprawdzenie, czy wiadomość e-mail jest bezpieczna. Oto jak z niej korzystać:

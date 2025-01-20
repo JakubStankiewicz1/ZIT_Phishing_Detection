@@ -12,10 +12,21 @@
     max-width: 1200px;
 }
 
+.navbarIconImg {
+    width: 35px;
+    height: auto;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .navbarTitle {
     font-size: 1.5rem;
     color: white;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
 }
 
 .navbarRightPart {
