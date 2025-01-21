@@ -6,6 +6,7 @@ import './index.css';
 import Usage from './components/Usage/Usage';
 import LetsTalk from './components/LetsTalk/LetsTalk';
 import Technologies from './components/Technologies/Technologies';
+import ReportPhishing from './components/ReportPhishing/ReportPhishing';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
       </div>
       <div className="pageElement">
         <Technologies />
+      </div>
+      <div className="pageElement">
+        <ReportPhishing />
       </div>
       <div className="pageElement" id="usage">
         <Usage />

@@ -1,29 +1,44 @@
 .letsTalk {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
   align-items: center;
   justify-content: center;
   height: 100vh;
   background-color: #c6dcec;
   padding: 40px;
-  text-align: center;
   color: #333;
   font-family: "Arial", sans-serif;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.letsTalk h2 {
+.text-section {
+  text-align: left;
+}
+
+.text-section h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #007bff;
+}
+
+.text-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.form-section {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 400px;
 }
 
 .contact-form input,
@@ -33,6 +48,11 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form textarea {
+  min-height: 100px;
 }
 
 .contact-form button {
